@@ -1,6 +1,9 @@
-const { description } = require('../../package')
+import { defineUserConfig } from 'vuepress'
+import type { DefaultThemeOptions } from 'vuepress'
+import { description } from '../../package.json'
 
-module.exports = {
+export default defineUserConfig<DefaultThemeOptions>({
+    lang: 'en-US',
     title: 'RSS3',
     description: description,
 
@@ -144,4 +147,4 @@ module.exports = {
             ],
         },
     },
-}
+})

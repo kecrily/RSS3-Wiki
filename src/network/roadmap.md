@@ -24,7 +24,7 @@
         <el-card>
             <h4>RSS3 PreNode</h4>
             <p>A new centralised implementation of protocol v0.3.0 and v0.3.1 with basic assets indexing and items indexing function in Node.js</p>
-            <p>Under Maintenance on <a target="_blank" href="https://github.com/NaturalSelectionLabs/RSS3-Pre-Node">GitHub (private repo)</a></p>
+            <p>Under Maintenance on <a target="_blank" href="https://github.com/NaturalSelectionLabs/RSS3-PreGod">GitHub</a></p>
         </el-card>
     </el-timeline-item>
     <el-timeline-item timestamp="Jul 2021 - Nov 2021" placement="top" :hollow="true" type="primary">
