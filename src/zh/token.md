@@ -1,71 +1,71 @@
 # 🐮 $RSS3
 
-## Introduction
-As described in the Whitepaper, the yet-to-come RSS3DAO is designed to be governing all matters related to $RSS3 and its network. Though a complete decentralized governing may take time to develop, with the continuous development of the project, we believe it is time for us to introduce our token $RSS3.
+## 介绍
 
-For now, we expect the tokens to be used to govern the following issues:
+正如白皮书中所描述的，尚未到来的 RSS3DAO 将管理所有与 $RSS3 和其网络相关的事务。虽然全面的去中心化管理需要时间，但随着项目的不断发展，我们相信现在是时候推出我们的代币 $RSS3了。
 
-1. Global Indexer and Serving Node elections
-2. Maximum number of RSS3 files per Serving Node
-3. DKG key fragments threshold
-4. Subgroup Scaling
-5. Module upgrade
-6. Epoch Round duration
-7. Treasury
-8. Incentive Management
+目前，我们计划将代币用于解决以下问题：
 
-Also, we expect that GI and SN operators will be mandated to stake $RSS3 for operations.
+1. 全局索引器和服务节点选举
+2. 每个服务节点所能服务的 RSS3 文件数
+3. DKG 密钥碎片阈值
+4. 控制子群规模的伸缩
+5. 模块升级
+6. 设置节点间期时长
+7. 财政
+8. 管理激励计划
 
-Generally, the treasury will be maintained to ensure the growth of the ecosystem composed of
-users and application adoptions. Specifically, the growth is expected to come from the follows:
+另外，我们计划全局所有器和服务节点维护者将强制要求质押 $RSS3 获取操作授权。
 
-1. Various Services
-2. Fees generated from social / application activities or exchanges
-3. Future community consensus events
-4. New virtual asset inventions
+笼统地讲，财政将确保由用户和应用程序所组成的生态系统能够蓬勃发展。具体而言，财政收入预计将来自以下方面：
 
-### Total Supply and Allocation
+1. 各种服务
+2. 从社交/应用活动或交互中产生的费用
+3. 未来的筹款活动
+4. 创造新的虚拟资产
 
-In total, all 1,000,000,000 $RSS3 tokens will be created at genesis. 
+### 总量及分配
+
+创世时总计 10 亿 $RSS3 代币。
 
 ![](../images/token/token1.png)
 
-### 5-Year Circulating Supply
+### 五年循环供应
 
-The majority of the $RSS3 Token is subject to long-term lockups. Details are as follows:
+大部分 $RSS3 代币将长期锁定，详情如下。
 
 ![](../images/token/token2.png)
 
-#### Community
+#### 社区
 
-Community tokens are those that will be gradually distributed to the general public. 
+社区代币指的是那些将逐步分配给公众的代币。
 
-- 5% will be tokens from public sales during the TGE, which will be the only tokens that are unlocked immediately.
-- 10% will be early incentives. 2% will be airdropped to existing users in the RSS3 ecosystem 1 month after the LBP. The remaining will be having a 12-month linear unlock, which will be used as incentives toward various stakeholders (e.g. active users, ecosystem app developers, and testnet node operators).
-- 2% will be for partner projects and organizations. There will be a 12-month cliff and then a 36-month linear unlock.
-- 47% will be governed by the RSS3DAO for future development purposes. 2% will be unlocked after LBP, where the initial liquidity pool on Uniswap afterward is coming from. Then it will be subject to a 12-month cliff before a 48-month linear unlock.
+- 5% 是 TGE (Token Generation Events) 期间公开销售的代币，这将是 LBP (Liquid Bootstrap Pool) 结束后唯一立即解锁的代币部分。
+- 10% 是早期激励。2% 在 LBP 结束后一个月空投给 RSS3 生态系统中的现存用戶。剩下的将在十二个月内进行线性解锁，这将用作对各种利益相关者（例如活跃用户、生态应用开发者和测试网络节点维护者）的激励。
+- 2% 將用于合作項目和组织。代币将在头十二个月锁仓，在后三十六个月进行线性解锁。
+- 47% 将由 RSS3DAO 管理，用于未来的开发计划。2% 将在 LBP 结束后解锁，之后初始资金将放入 Uniswap 流动池。 而将在为期 48 个月的线性解鎖前需锁仓 12 个月。
 
-#### Seed Investors
+#### 种子轮
 
-Seed investors are those who backed us from the very beginning. Their purchase price was 0.04$ per $RSS3. There will be a 12-month cliff and then a 24-month linear unlock.
+种子投资者是从一开始就支持我们的人。 他们的购买价格是 $RSS3/$0.04，12 个月锁仓期，然后进行为期 24 个月的线性解锁。
 
-#### Private Token Sale
+#### 私募
 
-Private token sale participants have purchase prices ranging from 0.06$ to 0.15$. There will be a 12-month cliff and then an 18-month linear unlock.
+私募轮代币发售参与者的购买价格从 $0.06 到 $0.15不等。 12 个月锁仓期，然后进行为期 18 个月的线性解锁。
 
-#### Natural Selection Labs
+#### Natural Selection Labs（自然选择实验室）
 
-Natural Selection Labs is the equity company that initiated the RSS3 project. It will be granted 5% of all the tokens with a vesting period of 24 months after a 12-month cliff.
+Natural Selection Labs 是发起 RSS3 项目的股份公司。 在 12 个月锁仓期结束后，它将获得 5% 的代币，归属期为 24 个月。
 
-#### Team
+#### 团队
 
-Those existing and future crews of RSS3 will be allocated with about 15% of all the tokens. These tokens will be unlocked after a 12-month cliff with a 36-month vesting period.
+RSS3 现有和未来的工作人员将获得所有代币的 15% 左右。 这些代币将在 12 个月锁仓期和 36 个月的归属期后解锁。
 
-#### Advisors
+#### 顾问
 
-There have been lots of people who helped the RSS3 project from its infancy. In total, 1% of all the tokens will be granted to those advisors with a 12-month linear vesting period.
+有很多人从初期就帮助了 RSS3 项目。 总共有 1% 的代币将授予那些顾问，归属期 12 个月。
 
-## Links
+## 链接
 
 [Uniswap](https://app.uniswap.org/#/swap?inputCurrency=0xc98d64da73a6616c42117b582e832812e7b8d57f&chain=mainnet)
 

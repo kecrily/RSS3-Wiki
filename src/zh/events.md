@@ -1,12 +1,12 @@
-# 🐝 Events
+# 🐝 活动
 
-## RSS3 Protocol v0.4.0 Adventure
+## RSS3 协议 v0.4.0 征求稿
 
-[Phase II](https://github.com/NaturalSelectionLabs/RSS3-Protocol/discussions/32)
+[阶段 II](https://github.com/NaturalSelectionLabs/RSS3-Protocol/discussions/32)
 
-[Phase I](https://github.com/NaturalSelectionLabs/RSS3-Protocol/discussions/25)
+[阶段 I](https://github.com/NaturalSelectionLabs/RSS3-Protocol/discussions/25)
 
-## RSS3 Whitepaper
+## RSS3 白皮书
 
 ![](../images/events/whitepaper.jpeg)
 

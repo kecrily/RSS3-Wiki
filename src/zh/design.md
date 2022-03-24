@@ -1,10 +1,10 @@
-# 🦋 Design
+# 🦋 设计
 
-## Graphics
+## 图案
 
-We designed an auxiliary graphic for RSS3, whose lines are not fixed, and if you refresh the page it will change to a different line.
+我们为 RSS3 设计了一个辅助图形，它的线条并不固定。刷新页面，它就会换成不同的线条。
 
-This symbolizes our desire for RSS3 to be open and inclusive.
+这象征着我们对 RSS3 开放和包容的希望。
 
 SVG
 
@@ -24,9 +24,9 @@ MP4
     <video width="300" autoplay muted playsinline src="@source/images/logo.mp4"></video>
 </p>
 
-## Badge
+## 徽章
 
-Show the world you're using RSS3.
+告诉世界我正在用 RSS3。
 
 `[![RSS3](https://badge.rss3.workers.dev)](https://github.com/NaturalSelectionLabs/RSS3)`
 
@@ -52,7 +52,7 @@ Show the world you're using RSS3.
 
 <p><img width="200" src="https://rss3.mypinata.cloud/ipfs/QmUG6H3Z7D5P511shn7sB4CPmpjH5uZWu4m5mWX7U3Gqbu"></p>
 
-## Color
+## 颜色
 
 <p style="background: #0072FF; color: #FFF; display: inline-block;">#0072FF</p>
 
