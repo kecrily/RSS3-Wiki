@@ -13,7 +13,7 @@ sidebarDepth: 1
 
 ![RSS3](https://badge.rss3.workers.dev/)
 
-## What is RSS3?
+## Why RSS3?
 
 The right to create, disseminate and distribute information should not be in the hands of centralized governing. It is the basic right of cyber lives.
 
@@ -21,34 +21,31 @@ Gradually over the past two decades, several data superpowers have controlled co
 
 The world has been eager for a new way of information syndication. RSS used to be the pioneer of its time, now it’s time for us to pick up the baton and carry on.
 
-Derived from the best out of RSS, RSS3 is an open information syndication protocol that aims to support efficient and decentralized information distribution in Web3.
+Derived from the best out of RSS, RSS3 is an open information syndication protocol that aims to support efficient and decentralized information distribution in Web3. It defines the format of information presence and communication, with this elegantly designed, user-friendly content format, clients can easily access a variety of content sources in a uniform format without the need for extensive compatibility logic.
 
 Extended Reading:
+
 - [Here comes RSS3](https://rss3.notion.site/1-Here-comes-RSS3-501aa9df6dba40caae0a53eb2de6f060)
 - [What is the relationship between RSS3 and RSS?](./faq.md#q-what-is-the-relationship-between-rss3-and-rss)
 - [Is RSS3 a SocialFi?](./faq.md#q-is-rss3-a-socialfi)
 
 ## How RSS3 works?
 
-Under the RSS3 system, users own and have control over their own files through public-key cryptography, and the applications can only use rather than control users' files. For a more detailed description you can read [Platformless Media](https://rss3.notion.site/3-Platformless-Media-55505c45a49743a2b89304abcb4a90da)
+[RSS3 Protocls](./protocol/README.md) classify information into four types - profiles links assets notes
 
-RSS3 Protocol defines the format of information presence and communication, and through the protocol, users store signed information to decentralised RSS3 Network, including profile, link, note and asset, where note and asset include not only signed content published by users themselves, but also content automatically indexed from other networks. Details of the RSS3 Protocol can be found [here](/protocol.html).
+[RSS3 Apps](#rss3-apps) access and publish data using RSS3 SDKs in the format defined by RSS3 Protocls
 
-The RSS3 Protocol is designed to be very flexible, and using the RSS3 Protocol and RSS3 Network, you can do many types of applications, two typical representatives are user profile applications and information flow applications, you can see our two demo applications [Cheers](https://cheers.bio/) and [Revery](https://revery.so/). But we also do not limit and cannot predict what applications you will build.
+[RSS3 SDKs](./sdk/list.md) fetch data from the RSS3 Network and publish data to RSS3 Supported Networks
 
-With a basic understanding of the protocol, the quickest way to develop an RSS3 application is to use the [RSS3 SDK](/sdk.html), or to request [API](/api.html) directly.
-
-Reading [our white paper](/RSS3-Whitepaper.pdf) is also a good way to learn more about the protocol and the upcoming decentralized RSS3 Network.
+[RSS3 Network](./network/roadmap.md) crawls data from various RSS3 Supported Networks, caches the data into its own efficient database, and do some pre-processing, such as applying artificial intelligence recommendation algorithms and providing search function.
 
 ![RSS3 System](./images/system.png)
 
-If you have any questions, you can find us on [GitHub](https://github.com/NaturalSelectionLabs/RSS3) [Discord](https://discord.gg/rss3) [Telegram](https://t.me/rss3_en) or [Twitter](https://twitter.com/rss3_). We'll be happy to help!
-
-RSS3 and its affiliated network are open and permissionless - If you are using RSS3 for your project, we would be delighted if you [let us know](https://github.com/NaturalSelectionLabs/RSS3/issues/21). We will provide technical or operational assistance if you need it.
+RSS3 and its affiliated network and tools are open and permissionless - If you are using RSS3 for your project, we would be delighted if you [let us know](https://github.com/NaturalSelectionLabs/RSS3/issues/21).
 
 Extended Reading:
-- [What is the relationship between RSS3 and RSS3 Network?](./faq.md#q-what-is-the-relationship-between-rss3-and-rss3-network)
-- [Does RSS3 support recommendation algorithms?](./faq.md#q-does-rss3-support-recommendation-algorithms)
+
+- [Platformless Media](https://rss3.notion.site/3-Platformless-Media-55505c45a49743a2b89304abcb4a90da)
 
 ## Community
 
@@ -64,7 +61,7 @@ Or you can follow [Twitter](https://twitter.com/rss3_) for updates.
 
 ## Ecosystem
 
-### RSS3 Applications
+### RSS3 Apps
 
 Feel free to submit yours in [Let us know!](https://github.com/NaturalSelectionLabs/RSS3/issues/21)
 
@@ -85,35 +82,49 @@ Feel free to submit yours in [Let us know!](https://github.com/NaturalSelectionL
     <span><a target="_blank" href="https://github.com/NaturalSelectionLabs/RSS3/issues/21">Your logo</a></span>
 </p>
 
-### Supported Networks
+### RSS3 Supported Networks
 
-**Blockchains**
+#### Profiles
 
 <p class="grid">
-    <span><a target="_blank" href="https://ethereum.org/"><img alt="Ethereum" src="./images/networks/ethereum.png"></a></span>
-    <span><a target="_blank" href="https://polygon.technology/"><img alt="Polygon" src="./images/networks/polygon.svg"></a></span>
-    <span><a target="_blank" href="https://www.binance.org/en"><img alt="Binance Smart Chain" src="./images/networks/bsc.svg"></a></span>
-    <span><a target="_blank" href="https://www.arweave.org/"><img alt="Arweave" src="./images/networks/arweave.svg"></a></span>
-    <span><a target="_blank" href="https://arbitrum.io/"><img alt="Arbitrum" src="./images/networks/arbitrum.jpeg"></a></span>
-    <span><a target="_blank" href="https://www.avax.network/"><img alt="Avalanche" src="./images/networks/avalanche.svg"></a></span>
-    <span><a target="_blank" href="https://fantom.foundation/"><img alt="Fantom" src="./images/networks/fantom.svg"></a></span>
+    <span>Crossbell</span>
+    <span><a target="_blank" href="https://ens.domains/"><img alt="ENS" src="./images/networks/ens.svg"></a></span>
+    <span><a target="_blank" href="https://lens.dev/"><img alt="Lens" src="./images/networks/lens.svg"></a></span>
 </p>
 
-**Applications**
+#### Links
 
 <p class="grid">
+    <span>Crossbell</span>
+    <span><a target="_blank" href="https://lens.dev/"><img alt="Lens" src="./images/networks/lens.svg"></a></span>
+</p>
+
+#### Notes
+
+<p class="grid">
+    <span>Crossbell</span>
+    <span><a target="_blank" href="https://lens.dev/"><img alt="Lens" src="./images/networks/lens.svg"></a></span>
     <span><a target="_blank" href="https://mirror.xyz/"><img alt="Mirror" src="./images/networks/mirror.svg"></a></span>
     <span><a target="_blank" href="https://gitcoin.co/"><img alt="Gitcoin" src="./images/networks/gitcoin.svg"></a></span>
-    <span><a target="_blank" href="https://poap.xyz/"><img alt="POAP" src="./images/networks/poap.svg"></a></span>
     <span><a target="_blank" href="https://twitter.com/"><img alt="Twitter" src="./images/networks/twitter.svg"></a></span>
     <span><a target="_blank" href="https://misskey-hub.net/"><img alt="Misskey" src="./images/networks/misskey.ico"></a></span>
     <span><a target="_blank" href="https://okjike.com/"><img alt="Jike" src="./images/networks/jike.png"></a></span>
+    <span><a target="_blank" href="https://github.com/"><img alt="GitHub" src="./images/networks/github.png"></a></span>
 </p>
 
-**Name Services**
+#### Assets
 
 <p class="grid">
-    <span><a target="_blank" href="https://ens.domains/"><img alt="ENS" src="./images/networks/ens.svg"></a></span>
-    <span><a target="_blank" href="https://da.systems/"><img alt="DAS" src="./images/networks/das.svg"></a></span>
-    <span><a target="_blank" href="https://www.flowns.org/"><img alt="Flowns" src="./images/apps/flowns.svg"></a></span>
+    <span>Crossbell</span>
+    <span><a target="_blank" href="https://ethereum.org/"><img alt="Ethereum" src="./images/networks/ethereum.png"></a></span>
+    <span><a target="_blank" href="https://polygon.technology/"><img alt="Polygon" src="./images/networks/polygon.svg"></a></span>
+    <span><a target="_blank" href="https://www.binance.org/en"><img alt="Binance Smart Chain" src="./images/networks/bsc.svg"></a></span>
+    <span><a target="_blank" href="https://arbitrum.io/"><img alt="Arbitrum" src="./images/networks/arbitrum.jpeg"></a></span>
+    <span><a target="_blank" href="https://www.avax.network/"><img alt="Avalanche" src="./images/networks/avalanche.svg"></a></span>
+    <span><a target="_blank" href="https://fantom.foundation/"><img alt="Fantom" src="./images/networks/fantom.svg"></a></span>
+    <span><a target="_blank" href="https://poap.xyz/"><img alt="POAP" src="./images/networks/poap.svg"></a></span>
+    <span><a target="_blank" href="https://github.com/"><img alt="GitHub" src="./images/networks/github.png"></a></span>
+    <span><a target="_blank" href="https://www.playstation.com/"><img alt="PlayStation" src="./images/networks/playstation.svg"></a></span>
+    <span><a target="_blank" href="https://solana.com/"><img alt="Solana" src="./images/networks/solana.svg"></a></span>
+    <span><a target="_blank" href="https://www.onflow.org/"><img alt="Flow" src="./images/networks/flow.svg"></a></span>
 </p>

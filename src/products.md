@@ -2,13 +2,14 @@
 
 Below is a list of products maintained or sponsored by RSS3 foundation.
 
-<Badge type="warning" text="Experimental: 7" vertical="middle" /> <Badge type="tip" text="Stable: 8" vertical="middle" /> <Badge type="danger" text="Deprecated: 8" vertical="middle" />
+<Badge type="warning" text="Experimental: 8" vertical="middle" /> <Badge type="tip" text="Stable: 7" vertical="middle" /> <Badge type="danger" text="Deprecated: 9" vertical="middle" />
 
 ## RSS3 Protocols
 
 | Product Name | RSS3 Version | Product Link | Maintenance Status |
 | -- | -- | -- | -- |
-| RSS3 Protocol v0.4.0-rc.1 | ![RSS3](https://badge.rss3.workers.dev/?version=v0.4.0--rc.1) | [protocol/v0.4.0-rc.1](/protocol/v0.4.0-rc.1.md) | <Badge type="warning" text="Experimental" vertical="middle" /> |
+| RSS3 Protocol v0.4.0-rc.2 | ![RSS3](https://badge.rss3.workers.dev/?version=v0.4.0--rc.2) | [protocol/v0.4.0-rc.2](/protocol/v0.4.0-rc.2.md) | <Badge type="warning" text="Experimental" vertical="middle" /> |
+| RSS3 Protocol v0.4.0-rc.1 | ![RSS3](https://badge.rss3.workers.dev/?version=v0.4.0--rc.1) | [protocol/v0.4.0-rc.1](/protocol/v0.4.0-rc.1.md) | <Badge type="danger" text="Deprecated" vertical="middle" /> |
 | RSS3 Protocol v0.3.1 | ![RSS3](https://badge.rss3.workers.dev/?version=v0.3.1) |  [protocol/v0.3.1](/protocol/v0.3.1.md) | <Badge type="tip" text="Stable" vertical="middle" /> |
 | RSS3 Protocol v0.3.0 | ![RSS3](https://badge.rss3.workers.dev/?version=v0.3.0) |  [protocol/v0.3.0](/protocol/v0.3.0.md) | <Badge type="danger" text="Deprecated" vertical="middle" /> |
 | RSS3 Protocol v0.2.0 | ![RSS3](https://badge.rss3.workers.dev/?version=v0.2.0) |  [protocol/v0.2.0](/protocol/v0.2.0.md) | <Badge type="danger" text="Deprecated" vertical="middle" /> |
@@ -37,6 +38,7 @@ Below is a list of products maintained or sponsored by RSS3 foundation.
 | Product Name | RSS3 Version | Product Link | Maintenance Status |
 | -- | -- | -- | -- |
 | RSS3 PreGod | ![RSS3](https://badge.rss3.workers.dev/?version=v0.4.0) | [GitHub](https://github.com/NaturalSelectionLabs/RSS3-PreGod) | <Badge type="warning" text="Experimental" vertical="middle" /> |
+| Crossbell | ![RSS3](https://badge.rss3.workers.dev/?version=v0.4.0) | - | <Badge type="warning" text="Experimental" vertical="middle" /> |
 | Web3 Name Service | ![RSS3](https://badge.rss3.workers.dev/?version=RIP--2) | [GitHub](https://github.com/NaturalSelectionLabs/Web3-Name-Service) | <Badge type="tip" text="Stable" vertical="middle" /> |
 | RSS3 PreNode | ![RSS3](https://badge.rss3.workers.dev/?version=v0.3.1) ![RSS3](https://badge.rss3.workers.dev/?version=v0.3.0) | [GitHub (private repo)](https://github.com/NaturalSelectionLabs/RSS3-Pre-Node) | <Badge type="tip" text="Stable" vertical="middle" /> |
 | RSS3 Hub Next | ![RSS3](https://badge.rss3.workers.dev/?version=v0.2.0) | [GitHub (private repo)](https://github.com/NaturalSelectionLabs/RSS3-Hub-Next) | <Badge type="danger" text="Deprecated" vertical="middle" /> |
@@ -55,4 +57,3 @@ Below is a list of products maintained or sponsored by RSS3 foundation.
 | Product Name | Product Link | Maintenance Status |
 | -- | -- | -- |
 | RSSHub | [GitHub](https://github.com/DIYgod/RSSHub) [Website](https://docs.rsshub.app/en) | <Badge type="tip" text="Stable" vertical="middle" /> |
-| Misskey | [GitHub](https://github.com/misskey-dev/misskey) [Website](https://misskey-hub.net/en/) | <Badge type="tip" text="Stable" vertical="middle" /> |
