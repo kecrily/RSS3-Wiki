@@ -1,6 +1,6 @@
 # 产品
 
-以下是由 rss3基金会维护或赞助的产品列表。
+以下是由 RSS3 基金会维护或赞助的产品列表。
 
 <Badge type="warning" text="Experimental: 7" vertical="middle" /> <Badge type="tip" text="Stable: 8" vertical="middle" /> <Badge type="danger" text="Deprecated: 8" vertical="middle" />
 

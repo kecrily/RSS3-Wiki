@@ -2,14 +2,14 @@
 sidebar: auto
 ---
 
-# Support RSS3
+# 支持 RSS3
 
-RSS3 and its related tools is open source and completely free.
+RSS3 及其相关工具是开源且免费的。
 
-You can support RSS3 via donations.
+你可以通过捐款来支持 RSS3。
 
-We accept donations via the following ways:
+我们支持通过以下方式进行捐款。
 
 - [Gitcoin](https://gitcoin.co/grants/2679/rss3)
 - Ethereum: rss3.eth
-- Contact us directly: contact@rss3.io
+- 直接联系：contact@rss3.io

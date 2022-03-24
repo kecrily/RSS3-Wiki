@@ -23,6 +23,8 @@ sidebarDepth: 1
 
 RSS3 是吸取了 RSS 精华的崭新开放信息聚合协议，旨在为 Web3 提供高效且去中心化的信息分发方式。
 
+扩展阅读：
+
 - [Here comes RSS3](https://rss3.notion.site/1-Here-comes-RSS3-501aa9df6dba40caae0a53eb2de6f060)
 - [What is the relationship between RSS3 and RSS?](./faq.md#q-what-is-the-relationship-between-rss3-and-rss)
 - [Is RSS3 a SocialFi?](./faq.md#q-is-rss3-a-socialfi)
