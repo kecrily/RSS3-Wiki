@@ -1,8 +1,20 @@
+import { defineUserConfig } from '@vuepress/cli'
+import type { DefaultThemeOptions } from '@vuepress/theme-default'
+import { navbar, sidebar } from './configs'
 const { description } = require('../../package')
 
-module.exports = {
+export default defineUserConfig<DefaultThemeOptions>({
     title: 'RSS3',
     description: description,
+
+    locales: {
+        '/': {
+          lang: 'en-US',
+        },
+        '/zh/': {
+          lang: 'zh-CN',
+        },
+    },
 
     head: [
         ['meta', { name: 'theme-color', content: '#fff' }],
@@ -38,113 +50,19 @@ module.exports = {
         themePlugins: {
             activeHeaderLinks: false,
         },
-        navbar: [
-            {
-                text: 'Guide',
-                link: '/',
-            },
-            {
-                text: 'Tech Weekly',
-                link: '/tech-weekly/',
-            },
-            {
-                text: 'Whitepaper',
-                link: 'https://rss3.io/RSS3-Whitepaper.pdf'
-            },
-            {
-                text: 'Blog',
-                link: 'https://rss3.notion.site/'
-            },
-            {
-                text: '💌 Join Us',
-                link: 'https://rss3.notion.site/Open-Source-Remote-RSS3-Offering-the-Dopest-Positions-b6fdbffee017449797397f45340de9d4'
-            },
-            {
-                text: 'Learn More',
-                children: [
-                    {
-                        text: 'Discord',
-                        link: 'https://discord.gg/rss3'
-                    },
-                    {
-                        text: 'Telegram',
-                        link: 'https://t.me/rss3_en'
-                    },
-                    {
-                        text: 'Twitter',
-                        link: 'https://twitter.com/rss3_'
-                    },
-                    {
-                        text: 'Support RSS3',
-                        link: '/support.md'
-                    },
-                ]
-            },
-        ],
-        sidebar: {
-            '/tech-weekly/': [
-                {
-                    text: 'Tech Weekly',
-                    children: [
-                        '/tech-weekly/README.md',
-                    ],
-                },
-            ],
-            '/': [
-                {
-                    text: '👋 Guide',
-                    collapsible: true,
-                    link: '/README.md',
-                    children: [
-                        '/README.md',
-                        '/products.md',
-                        '/faq.md',
-                        '/thanks.md',
-                    ],
-                },
-                {
-                    text: '🕊 Protocol',
-                    collapsible: true,
-                    sidebarDepth: 5,
-                    link: '/protocol/README.md',
-                    children: [
-                        '/protocol/README.md',
-                        '/protocol/v0.4.0-rc.1.md',
-                        {
-                            text: 'RSS3 Improvement Proposals',
-                            children: [
-                                '/protocol/RIPs/RIP-1.md',
-                                '/protocol/RIPs/RIP-2.md',
-                                '/protocol/RIPs/RIP-3.md',
-                                '/protocol/RIPs/RIP-4.md',
-                                '/protocol/RIPs/RIP-5.md',
-                            ],
-                        },
-                    ],
-                },
-                {
-                    text: '🐿 SDK',
-                    collapsible: true,
-                    link: '/sdk/list.md',
-                    children: [
-                        '/sdk/list.md',
-                        '/sdk/rss3-sdk-for-javascript.md',
-                    ],
-                },
-                {
-                    text: '🦈 Network',
-                    collapsible: true,
-                    link: '/network/roadmap.md',
-                    children: [
-                        '/network/roadmap.md',
-                        '/network/api.md',
-                        '/network/data.md',
-                    ],
-                },
-                '/design.md',
-                '/events.md',
-                '/token.md',
-            ],
+        locales: {
+            '/': {
+              selectLanguageName: 'English',
+              navbar: navbar.en,
+              sidebar: sidebar.en,
+            }, 
+            '/zh/': {
+                selectLanguageName: '中文',
+                selectLanguageText: '语言',
+                selectLanguageAriaLabel: '语言',
+                navbar: navbar.zh,
+                sidebar: sidebar.zh,
+              },
         },
     },
-}
+})
