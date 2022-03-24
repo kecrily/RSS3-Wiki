@@ -1,6 +1,6 @@
-# Thanks
+# 感谢
 
-## Investors
+## 投资者
 
 <p class="grid">
     <span><img alt="sky9 capital" src="../images/sponsors/sky9.svg"></span>
@@ -37,10 +37,10 @@
     <span><img alt="miss bitcoin" src="../images/sponsors/missbitcoin.png"></span>
 </p>
 
-## Users
+## 用户
 
 ![](https://raw.githubusercontent.com/NaturalSelectionLabs/RSS3-Network-Data/main/statics/avatars.png)
 
-## Token Holders
+## 代币持有者
 
 [RSS3 Token Holders - Etherscan](https://etherscan.io/token/tokenholderchart/0xc98d64da73a6616c42117b582e832812e7b8d57f?range=500)

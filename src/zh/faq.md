@@ -1,25 +1,25 @@
-# FAQ
+# 常见问题
 
-### Q: What is the relationship between RSS3 and RSS?
+### 问：RSS3和RSS有什么关系？
 
-A: The founders of RSS3 are big fans of RSS, and aspire to the free and open Internet typically represented by RSS in the Web1 era. We made the [RSSHub](https://github.com/DIYgod/RSSHub) project based on the RSS protocol in an effort to integrate RSS with Web2 products, but due to the many limitations of the protocol, the project is like dancing with shackles on its feet. We all know that the design of RSS is no longer able to meet the more complex information aggregation and distribution needs of the current Internet. So we create RSS3, expecting that the spirit of RSS would be passed on in the Web3 era. In order to meet the complex needs of Web2 and Web3, the design and implementation of RSS3 is very different from RSS, and they are no other related except for the design concept.
+答：RSS3 的创始人都是 RSS 的忠实粉丝，他们向往以 Web1 时代典型的 RSS 为代表的自由开放的互联网。我们做了基于 RSS 协议的 [RSSHub](https://github.com/DIYgod/RSSHub) 尝试将 RSS 与 Web2 产品集成，但是由于协议自身的诸多限制，项目就像带着镣铐跳舞。在发现 RSS 的设计已经不能满足当前互联网更加复杂的信息聚合和分发需求后，我们创建了 RSS3，希望 RSS 的精神能够在 Web3 时代得到传承。为了满足 Web2 和 Web3 的复杂需求，RSS3 的设计和实现与 RSS 有了很大的不同，除了设计理念之外，它们没有其他关系。
 
-### Q: Is RSS3 a SocialFi?
+### 问：RSS3 是 SocialFi 吗？
 
-A: No. RSS3 can indeed be used for social, but it is not limited to social, it is an infrastructure for information distribution and can be used for any scenario that requires information distribution, such as NFT marketplace, personal resume, personal blog, posting notifications, etc.
+答：不是。RSS3 确实可以用于社交，但不限于社交，它是信息分发的基础设施，可以用于任何需要信息分发的场景，例如 NFT 市场、简历、个人博客、发布通知等。
 
-### Q: What is the relationship between RSS3 and RSS3 Network?
+### 问：RSS3 和 RSS3 网络有什么关系？
 
-A: RSS3 is also known as RSS3 Protocol, it defines the format of information presence and communication, and the RSS3 Network is a decentralized implementation of the RSS3 Protocol, and provides some additional methods of easily accessing data based on the protocol.
+答：RSS3 也称为 RSS3 协议，它定义了信息呈现和通信的格式，RSS3 网络是 RSS3 协议的去中心化实现，并基于该协议提供了一些方便访问数据的附加方法。
 
-### Q: Why RSS3 Network store data on a distributed network instead of on a blockchain?
+### 问：为什么 RSS3 网络将数据存储在分布式网络而不是区块链上？
 
-A: We know storing data on the blockchain is a kind of Web3 political correctness, but storing data on a distributed network with signatures as consensus is a kind of technical correctness at this stage. First of all, the exaggerated inefficiency and high cost of blockchain increases the threshold of use, and to some extent hinders information distribution and decentralization, low efficiency makes it impossible to compete with centralized platforms with high efficiency and excellent experience, high cost prevents most developers and users from using it, and many developers and users have to use the centralized platform OpenSea explains this point clearly, secondly blockchain itself cannot perform data indexing, analysis and aggregation, and cannot achieve complex needs such as indexing user dynamics from other platforms and returning all followers of a user easily and quickly. While this may be difficult for some staunch blockchain believers to accept, we believe that our enemy is not other Web3 applications but Web2 centralized platforms, and the richer functionality, greater flexibility and efficiency that a distributed network brings can help us achieve our goals. We are also delighted to see the emergence and widespread acceptance of other distributed networks such as IPFS and Arweave.
+答：将数据存储在区块链上成为了 Web3 的政治正确，但实际上将数据存储在以签名为共识的分布式网络上只是现阶段的技术正确。首先，区块链令人错愕的低效率和高成本拔高了使用门槛，这在一定程度上阻碍了信息的分发和去中心化，效率低下无法与效率高、体验好的中心化平台竞争，高成本阻碍了大多数开发者和用户使用它，很多开发者和用户不得不使用中心化平台 OpenSea 清楚地解释了这一点，其次区块链本身无法进行数据索引、分析和聚合，也无法实现从其他平台索引用户动态、方便快捷地返回某用户的所有关注者等复杂需求。这一点对于一些坚定的区块链信徒来说可能难以接受，但我们认为我们的敌人不是其他 Web3 应用程序而是 Web2 中心化平台，而分布式网络所带来的更丰富的功能、更大的灵活性和效率则可以帮助我们实现目标。我们也很高兴看到 IPFS 和 Arweave 等其他分布式网络的出现和广泛接受。
 
-### Q: What is the relationship between RSS3 and the applications Revery and Cheers?
+### 问：RSS3 和 Revery 和 Cheers 应用程序有什么关系？
 
-A: Revery and Cheers are demos and early testbeds for the RSS3 Protocol and RSS3 Network, they will gradually be turned into a normal eco-project to be maintained by the community.
+A: Revery 和 Cheers 是 RSS3 协议和 RSS3 网络的演示产品和早期测试平台，它们将逐渐变成普通的生态项目，并交由社区维护。
 
-### Q: Does RSS3 support recommendation algorithms?
+### 问：RSS3 是否支持推荐算法？
 
-A:  RSS3 don't reject recommendation algorithms, but they should be transparent and optional. In our scheme, the RSS3 network can be used in conjunction with an external and optional recommendation algorithm. No progress so far but we are constantly working on it.
+答：RSS3 不排除推荐算法，但它们应该是透明且可选的。在我们的方案中，RSS3 网络可以与外部可选的推荐算法结合使用。到目前为止，推荐算法还没有影子。不过我们一直有在努力。
