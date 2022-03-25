@@ -1,5 +1,5 @@
-# Data
+# 数据
 
-Right now, the RSS3 Network is powered by Pre-Nodes, which are temporarily maintained by the Natural Selection Labs. We constantly upload all RSS3 Files to a public [GitHub repository](https://github.com/NaturalSelectionLabs/RSS3-Network-Data), where everyone can access.
+目前 RSS3 网络由 Natural Selection Labs 维护的 Pre-Nodes 提供支持。我们不间断地将全部 RSS3 文件同步至人人皆可访问的 [GitHub 公开仓库](https://github.com/NaturalSelectionLabs/RSS3-Network-Data)中。
 
-We also provide a dashboard <https://dashboard.rss3.dev> to visualize an overview of the current state.
+你还可以通过仪表盘可视化地查看当前状态 <https://dashboard.rss3.dev>。

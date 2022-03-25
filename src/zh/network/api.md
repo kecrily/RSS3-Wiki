@@ -1,29 +1,29 @@
 # API
 
-## Introduction
+## 介绍
 
-[Source code](https://github.com/NaturalSelectionLabs/RSS3-Pre-Node)
+[源码](https://github.com/NaturalSelectionLabs/RSS3-Pre-Node)
 
 [![RSS3](https://badge.rss3.workers.dev/?version=v0.3.1)](https://github.com/NaturalSelectionLabs/RSS3/blob/main/versions/v0.3.1.md)
 
-While actively working on our ultimate goal, a fully decentralized node, a temporarily centralized version is currently available, you can use <https://prenode.rss3.dev> as the node entry point.
+在我们实现最终目标——完全去中心化的节点前，你可以通过临时性的中心化节点 https://prenode.rss3.dev 进行访问。
 
-## Supported name service
+## 受支持的域名服务
 
-Same as [Web3 Name Service](https://github.com/NaturalSelectionLabs/Web3-Name-Service)
+类似 [Web3 Name Service](https://github.com/NaturalSelectionLabs/Web3-Name-Service)
 
 - ENS: *.eth
 - DAS: *.bit
 - RNS: *.rss3
 
-## Supported account
+## 受支持的账号系统
 
 - EVM+
 - Twitter
 - Misskey
 - Jike
 
-## Supported auto assets
+## 受支持的自动索引资产
 
 - Gitcoin.Donation
 - xDai.POAP
@@ -32,7 +32,7 @@ Same as [Web3 Name Service](https://github.com/NaturalSelectionLabs/Web3-Name-Se
 - Polygon.NFT
 - Mirror.XYZ (to be removed)
 
-## Supported auto items
+## 受支持的自动索引项目
 
 - Gitcoin.Donation
 - xDai.POAP
@@ -46,79 +46,79 @@ Same as [Web3 Name Service](https://github.com/NaturalSelectionLabs/Web3-Name-Se
 
 ## API
 
--   GET `/:fid` - get a file
+- GET `/:fid` - 获取文件
 
-Example:
+示例：
 
-Get `0xC8b960D09C0078c18Dcbe7eB9AB9d816BcCa8944` index file
+获取 `0xC8b960D09C0078c18Dcbe7eB9AB9d816BcCa8944` 索引文件
 
 <https://prenode.rss3.dev/0xC8b960D09C0078c18Dcbe7eB9AB9d816BcCa8944>
 
--   PUT `/` - change a file
+- PUT `/` - 更改文件
 
-Body parameter
+Body 参数
 
-| Name     | Optional | Description              |
+| 名称     | 可选 | 描述              |
 | -------- | -------- | ------------------------ |
-| files    | false    | Array of files' contents |
+| files    | false    | 由文件内容组成的数组 |
 
--   GET `/assets/details`
+- GET `/assets/details`
 
-Get details of the assets
+获取资产细节
 
-Query parameter
+Query 参数
 
-| Name     | Optional | Description              |
+| 名称     | 可选 | 描述              |
 | -------- | -------- | ------------------------ |
-| assets   | false    | The ids of wanted assets, separated by commas |
-| full     | true    | Whether to return detailed information |
+| assets   | false    | 需要的资产 id，用 `,` 分割 |
+| full     | true    | 是否返回详细信息 |
 
-Example:
+示例：
 
-Get details of two assets `EVM+-0xC8b960D09C0078c18Dcbe7eB9AB9d816BcCa8944-Ethereum.NFT-0xacbe98efe2d4d103e221e04c76d7c55db15c8e89.5` and `EVM+-0xC8b960D09C0078c18Dcbe7eB9AB9d816BcCa8944-Polygon.NFT-0x548cee4ee43ecd2fb4716c490d3da315069d8114.3`
+获取 `EVM+-0xC8b960D09C0078c18Dcbe7eB9AB9d816BcCa8944-Ethereum.NFT-0xacbe98efe2d4d103e221e04c76d7c55db15c8e89.5` 和 `EVM+-0xC8b960D09C0078c18Dcbe7eB9AB9d816BcCa8944-Polygon.NFT-0x548cee4ee43ecd2fb4716c490d3da315069d8114.3` 两个资产的细节
 
 <https://prenode.rss3.dev/assets/details?assets=EVM%2B-0xC8b960D09C0078c18Dcbe7eB9AB9d816BcCa8944-Ethereum.NFT-0xacbe98efe2d4d103e221e04c76d7c55db15c8e89.5,EVM%2B-0xC8b960D09C0078c18Dcbe7eB9AB9d816BcCa8944-Polygon.NFT-0x548cee4ee43ecd2fb4716c490d3da315069d8114.3&full=1>
 
--   GET `/items/list`
+- GET `/items/list`
 
-Get the aggregated auto and custom items, sorted by time
+获取聚合的自动索引项目和自行提交项目，并按时间排序
 
-Query parameter
+Query 参数
 
-| Name     | Optional | Description              |
+| 名称     | 可选 | 描述              |
 | -------- | -------- | ------------------------ |
-| limit   | true    | Limit on the number of lists |
-| tsp     | true    | Time in RFC 3339 format, returns items before this time |
+| limit   | true    | 列表最多能返回的项目数量 |
+| tsp     | true    | RFC 3339 格式的时间，返回在此时间前的项目 |
 | persona     | false    |  |
 | linkID     | true    |  |
-| fieldLike     | true    | Filters for target.field, separated by commas |
+| fieldLike     | true    | 根据 `target.field` 进行过滤，用 `,` 分割 |
 
-Example:
+示例：
 
-Get aggregated items of `0xC8b960D09C0078c18Dcbe7eB9AB9d816BcCa8944`
+获取 `0xC8b960D09C0078c18Dcbe7eB9AB9d816BcCa8944` 的聚合项目
 
 <https://prenode.rss3.dev/items/list?limit=5&persona=0xC8b960D09C0078c18Dcbe7eB9AB9d816BcCa8944>
 
-Get aggregated items of personas who followed by `0xC8b960D09C0078c18Dcbe7eB9AB9d816BcCa8944`
+获取 `0xC8b960D09C0078c18Dcbe7eB9AB9d816BcCa8944` 关注的对象的聚合项目
 
 <https://prenode.rss3.dev/items/list?limit=5&persona=0xC8b960D09C0078c18Dcbe7eB9AB9d816BcCa8944&linkID=following>
 
-Get NFT and Gitcoin related aggregated items of `0xC8b960D09C0078c18Dcbe7eB9AB9d816BcCa8944`
+获取 `0xC8b960D09C0078c18Dcbe7eB9AB9d816BcCa8944` 与 NFT 和 Gitcoin 相关的聚合项目
 
 <https://prenode.rss3.dev/items/list?limit=5&persona=0xC8b960D09C0078c18Dcbe7eB9AB9d816BcCa8944&fieldLike=NFT,Gitcoin>
 
--   GET `/profile/list`
+- GET `/profile/list`
 
-Get profile of given persona list
+获取给定对象的资料
 
-Query parameter
+Query 参数
 
-| Name     | Optional | Description              |
+| 名称     | 可选 | 描述              |
 | -------- | -------- | ------------------------ |
-| personas    | false | Array of files' contents |
+| personas    | false | 由文件内容组成的数组 |
 
-Example:
+示例：
 
-Get profile of `0xC8b960D09C0078c18Dcbe7eB9AB9d816BcCa8944` and `0xee8fEeb6D0c2fC02Ef41879514A75d0E791b5061`
+获取 `0xC8b960D09C0078c18Dcbe7eB9AB9d816BcCa8944` 和 `0xee8fEeb6D0c2fC02Ef41879514A75d0E791b5061` 的资料
 
 <https://prenode.rss3.dev/profile/list?personas=0xC8b960D09C0078c18Dcbe7eB9AB9d816BcCa8944,0xee8fEeb6D0c2fC02Ef41879514A75d0E791b5061>
