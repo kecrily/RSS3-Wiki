@@ -65,22 +65,152 @@ Or you can follow [Twitter](https://twitter.com/rss3_) for updates.
 
 Feel free to submit yours in [Let us know!](https://github.com/NaturalSelectionLabs/RSS3/issues/21)
 
-<p class="grid">
-    <span><a target="_blank" href="https://revery.so/"><img alt="Revery" src="./images/apps/revery.svg"></a></span>
-    <span><a target="_blank" href="https://cheers.bio/"><img alt="Cheers" src="./images/apps/cheers.svg"></a></span>
-    <span><a target="_blank" href="https://mask.io/"><img alt="Mask" src="./images/apps/mask.svg"></a></span>
-    <span><a target="_blank" href="https://showme.fan/"><img alt="ShowMe" src="./images/apps/showme.svg"></a></span>
-    <span><a target="_blank" href="https://ingroup.chat/"><img alt="inGroup" src="./images/apps/ingroup.svg"></a></span>
-    <span><a target="_blank" href="https://www.flowns.org/"><img alt="Flowns" src="./images/apps/flowns.svg"></a></span>
-    <span><a target="_blank" href="https://www.info.unemeta.com/"><img alt="Une Meta" src="./images/apps/unemeta.svg"></a></span>
-    <span><a target="_blank" href="https://matrixworld.org/home"><img alt="Matrix World" src="./images/apps/matrixworld.svg"></a></span>
-    <span><a target="_blank" href="https://www.unipass.id/"><img alt="UniPass" src="./images/apps/unipass.svg"></a></span>
-    <span><a target="_blank" href="https://www.knn3.xyz/"><img alt="KNN3" src="./images/apps/knn3.png"></a></span>
-    <span><a target="_blank" href="https://search.interface.social/"><img alt="Interface Search" src="./images/apps/interface.svg"></a></span>
-    <span><a target="_blank" href="https://www.atemnet.com/"><img alt="Atem" src="./images/apps/atem.jpg"></a></span>
-    <span><img alt="Re: ID" src="./images/apps/reid.png"></span>
-    <span><a target="_blank" href="https://github.com/NaturalSelectionLabs/RSS3/issues/21">Your logo</a></span>
-</p>
+<div class="grid grid-apps">
+    <span class="eco-app">
+        <span class="banner">
+            <img src="./images/apps/revery.svg">
+        </span>
+        <span class="description">
+            <h4>Revery</h4>
+            <p>A Web3 native social media with great interoperability</p>
+        </span>
+        <span class="link">
+            <a target="_blank" href="https://revery.so/">Open Revery</a>
+        </span>
+    </span>
+    <span class="eco-app">
+        <span class="banner">
+            <img src="./images/apps/cheers.svg">
+        </span>
+        <span class="description">
+            <h4>Cheers</h4>
+            <p>Another cross-platform Web3 Profile</p>
+        </span>
+        <span class="link">
+            <a target="_blank" href="https://cheers.bio/">Open Cheers</a>
+        </span>
+    </span>
+    <span class="eco-app">
+        <span class="banner">
+            <img src="./images/apps/mask.svg">
+        </span>
+        <span class="description">
+            <h4>Mask</h4>
+            <p>RSS3 work with Mask Network to bring the best Web3 enhanced Web2 social experience</p>
+        </span>
+        <span class="link">
+            <a target="_blank" href="https://mask.io/">Open Mask</a>
+        </span>
+    </span>
+    <span class="eco-app">
+        <span class="banner">
+            <img src="./images/apps/showme.svg">
+        </span>
+        <span class="description">
+            <h4>ShowMe</h4>
+            <p>RSS3 powers the profile page of ShowMe, an NFT social subscription platform</p>
+        </span>
+        <span class="link">
+            <a target="_blank" href="https://showme.fan/">Open ShowMe</a>
+        </span>
+    </span>
+    <span class="eco-app">
+        <span class="banner">
+            <img src="./images/apps/ingroup.svg">
+        </span>
+        <span class="description">
+            <h4>inGroup</h4>
+            <p>RSS3 powers the activity feed of different groups in crypto organizations of InGroup, a web3 social network</p>
+        </span>
+        <span class="link">
+            <a target="_blank" href="https://ingroup.chat/">Open inGroup</a>
+        </span>
+    </span>
+    <span class="eco-app">
+        <span class="banner">
+            <img src="./images/apps/flowns.svg">
+        </span>
+        <span class="description">
+            <h4>Flowns</h4>
+            <p>RSS3 powers the profile of FlowNS, an opening protocol of identities and assets</p>
+        </span>
+        <span class="link">
+            <a target="_blank" href="https://www.flowns.org/">Open Flowns</a>
+        </span>
+    </span>
+    <span class="eco-app">
+        <span class="banner">
+            <img src="./images/apps/unemeta.svg">
+        </span>
+        <span class="description">
+            <h4>Une Meta</h4>
+            <p>RSS3 support his social-enforced NFT trading platform to bring out a refreshing NFT experience</p>
+        </span>
+        <span class="link">
+            <a target="_blank" href="https://www.info.unemeta.com/">Open Une Meta</a>
+        </span>
+    </span>
+    <span class="eco-app">
+        <span class="banner">
+            <img src="./images/apps/matrixworld.svg">
+        </span>
+        <span class="description">
+            <h4>Matrix World</h4>
+            <p>RSS3 powers the social profile of characters in this metaverse</p>
+        </span>
+        <span class="link">
+            <a target="_blank" href="https://matrixworld.org/home">Open Matrix World</a>
+        </span>
+    </span>
+    <span class="eco-app">
+        <span class="banner">
+            <img src="./images/apps/unipass.svg">
+        </span>
+        <span class="description">
+            <h4>UniPass</h4>
+            <p>RSS3 constructs part of Unipass’s user social graph</p>
+        </span>
+        <span class="link">
+            <a target="_blank" href="https://www.unipass.id/">Open UniPass</a>
+        </span>
+    </span>
+    <span class="eco-app">
+        <span class="banner">
+            <img src="./images/apps/knn3.png">
+        </span>
+        <span class="description">
+            <h4>KNN3</h4>
+            <p>A web3 users topological graph network where a major part of data comes from RSS3</p>
+        </span>
+        <span class="link">
+            <a target="_blank" href="https://www.knn3.xyz/">Open KNN3</a>
+        </span>
+    </span>
+    <span class="eco-app">
+        <span class="banner">
+            <img src="./images/apps/interface.svg">
+        </span>
+        <span class="description">
+            <h4>Interface Search</h4>
+            <p>A social search engine where a major part of data comes from RSS3</p>
+        </span>
+        <span class="link">
+            <a target="_blank" href="https://search.interface.social/">Open Interface Search</a>
+        </span>
+    </span>
+    <span class="eco-app">
+        <span class="banner">
+            <img src="./images/apps/atem.jpg">
+        </span>
+        <span class="description">
+            <h4>Atem</h4>
+            <p>RSS3 provides data for profile and also community activities for this decentralized community</p>
+        </span>
+        <span class="link">
+            <a target="_blank" href="https://www.atemnet.com/">Open Atem</a>
+        </span>
+    </span>
+</div>
 
 ### RSS3 Supported Networks
 
