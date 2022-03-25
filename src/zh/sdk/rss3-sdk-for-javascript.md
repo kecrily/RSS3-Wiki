@@ -1,22 +1,22 @@
 # RSS3 SDK for JavaScript
 
-## Introduction
+## 介绍
 
-[Source code](https://github.com/NaturalSelectionLabs/RSS3-SDK-for-JavaScript)
+[源码](https://github.com/NaturalSelectionLabs/RSS3-SDK-for-JavaScript)
 
-This is an RSS3 SDK for JavaScript that is kept up-to-date with the RSS3 Protocol and provides easy access to the main modules, as well as automatic signature handlings.
+此 SDK 适用于 JavaScript，并与 RSS3 协议保持同步，提供对主要模块的简易访问和自动化签名处理。
 
-The SDK is compatible with Node.js environments and major modern browsers, and has good support for TypeScript.
+此 SDK 与 Node.js 环境和主要的现代浏览器兼容，并有着良好的 TypeScript 支持。
 
 [![RSS3](https://badge.rss3.workers.dev/?version=v0.3.1)](https://github.com/NaturalSelectionLabs/RSS3/blob/main/versions/v0.3.1.md)
 [![test](https://github.com/NaturalSelectionLabs/RSS3-SDK-for-JavaScript/actions/workflows/test.yml/badge.svg)](https://github.com/NaturalSelectionLabs/RSS3-SDK-for-JavaScript/actions/workflows/test.yml)
 [![codecov](https://codecov.io/gh/NaturalSelectionLabs/RSS3-SDK-for-JavaScript/branch/develop/graph/badge.svg?token=361AKFS8AH)](https://codecov.io/gh/NaturalSelectionLabs/RSS3-SDK-for-JavaScript)
 
-## Install
+## 安装
 
 &nbsp;
 
-Installing `rss3` via yarn or npm.
+通过 npm 或 yarn 安装 `rss3`。
 
 <CodeGroup>
   <CodeGroupItem title="yarn" active>
@@ -36,24 +36,24 @@ npm install rss3 --save
   </CodeGroupItem>
 </CodeGroup>
 
-Then reference `rss3` in our project.
+然后在你的项目中引用 `rss3`。
 
 ```js
 import RSS3, { utils as RSS3Utils } from 'rss3';
 ```
 
-## Getting Started
+## 开始
 
-The first step in using the sdk is to initialise it.
+使用 SDK 的第一步是初始化
 
-### Initialization
+### 初始化
 
-There are 4 ways to initialize the SDK:
+有 4 种初始化 SDK 的方法：
 
--   Create a temporary account (recommended where file modification is not required)
--   Initialize with external signature method (recommended where file modification may be required)
--   Initialize with mnemonic
--   Initialize with private key
+- 创建一个临时账户（推荐在不需要修改文件的情况下使用）
+- 使用外部签名方法进行初始化（建议在可能需要修改文件的情况下使用）
+- 使用助记符进行初始化
+- 用私钥进行初始化
 
 ```ts
 interface IOptions {
@@ -82,9 +82,9 @@ export interface IOptionsSign extends IOptions {
 new RSS3(options: IOptionsMnemonic | IOptionsPrivateKey | IOptionsSign);
 ```
 
-**Temporary account**
+**临时账号**
 
-If the app only needs get information (e.g. activity feed or assets) from the RSS3 Network without committing changes, the easiest way to initialize it is by creating a temporary account (the first way), i.e. just pass the `endpoint` parameter.
+如果应用程序只需要从 RSS3 网络获取信息（如活动摘要或资产）而不需要提交更改，最简单的方法是通过创建临时账户（第一种方法）来初始化，即只需传递端点参数。
 
 ```ts
 const rss3 = new RSS3({
@@ -92,9 +92,9 @@ const rss3 = new RSS3({
 });
 ```
 
-**MetaMask or other ethereum compatible wallet**
+**MetaMask 或其他以太坊兼容钱包**
 
-If the app wants to help users make changes to a file (e.g. posting a new item or adding a new link), then, for security reasons, unless there is a specific need, we should initialize with external signature method provided by a hot or cold wallet (the second way).
+如果应用程序需要用户对文件进行修改（例如发布一个新项目或添加一个新链接），那么出于安全考虑，除非有特殊需要，我们应该用热钱包或冷钱包所提供的外部签名方法进行初始化（第二种方式）。
 
 <CodeGroup>
 <CodeGroupItem title="ethers" active>
@@ -133,11 +133,11 @@ const rss3 = new RSS3({
 </CodeGroupItem>
 </CodeGroup>
 
-And `agentSign` is a type of agent signature - refer to the `agent_id` and `agent_signature` fields in [RSS3 Protocol](https://github.com/NaturalSelectionLabs/RSS3) for more information. Once the user has initialized the SDK with an external signature, an agent signature is generated to sign subsequent changes. The agent information is stored in a suitable and secure place through the `agentStorage` parameter, and the default location is the cookies.
+`agentSign` 是代理签名的一种——[阅读 RSS3协议](https://github.com/NaturalSelectionLabs/RSS3) 了解关于 `agent_id` 和 `agent_signature` 字段的更多信息。当用户用外部签名初始化 SDK，就会生成代理签名并签署后续的修改。代理信息通过 `agentStorage` 参数存储在合适且安全的地方，默认位置是 cookies。
 
-We can also initialize the SDK with mnemonic or private keys, though not highly recommended.
+也可以使用助记符或私钥来初始化 SDK，不过不强烈推荐。
 
-**Mnemonic**
+**助记词**
 
 ```ts
 const rss3 = new RSS3({
@@ -147,7 +147,7 @@ const rss3 = new RSS3({
 });
 ```
 
-**PrivateKey**
+**私钥**
 
 ```ts
 const rss3 = new RSS3({
@@ -156,35 +156,35 @@ const rss3 = new RSS3({
 });
 ```
 
-The next section describes the use of the SDK through several usage scenarios.
+下一节将通过几个使用场景来介绍 SDK 的使用。
 
-### Getting Profile Details
+### 获取资料细节内容
 
-While external DID projects are supported (e.g. ENS, next.id and self.id), you can also get profile details from the RSS3 Network including avatars and nicknames. 
+在支持外部 DID 项目（如 ENS、next.id 和 self.id）的同时，也可以通过 RSS3 网络获取个人资料细节内容，包括头像和昵称。
 
-Use the `rss3.profile.get` method to get the profile of the specified persona.
+使用 `rss3.profile.get` 方法获取给定对象的资料。
 
-If no persona address is specified, the profile of the currently initialized persona will be returned.
+如果没有给定对象地址，将返回当前初始化对象的资料。
 
-Let's get the account details of a persona `0xC8b960D09C0078c18Dcbe7eB9AB9d816BcCa8944`
+获取对象 `0xC8b960D09C0078c18Dcbe7eB9AB9d816BcCa8944` 的账号资料
 
 ```ts
 const { details } = await rss3.profile.get('0xC8b960D09C0078c18Dcbe7eB9AB9d816BcCa8944');
 ```
 
-### Adding Persona's Associated Accounts
+### 添加对象的关联账户
 
-You can also help users add accounts to the RSS3 Network. 
+可以帮助用户在 RSS3 网络中添加账户。
 
-The list of supported accounts is available at [API#Supported account](/guide/api.html#supported-account)
+见 [API#受支持的账号系统](../network/api.md#受支持的账号系统)
 
-Accounts can be divided into two types: those that are decentralised, say blockchains, and those that belong to centralised platforms, including Twitter, Misskey and Jike.
+账户可以分为两种类型：一种是去中心化的，比如说区块链，另一种则是寄托于中心化平台，包括 Twitter、Misskey 和 Jike。
 
-Examples of each of these two types are given below.
+下面分别列举这两种类型的例子。
 
-Let's start by adding the current account of MetaMask. Please note that this address cannot be duplicated with rss3 instance's main address.
+我们先来添加当前的 MetaMask 账户。请注意，这个地址不能与 RSS3 实例的主地址重复。
 
-1. Declare this account
+1. 声明账号
 
 ```ts
 const account = {
@@ -193,30 +193,32 @@ const account = {
 };
 ```
 
-2. Compute the signature message and sign this message using the MetaMask to prove that the account belongs to us.
+2. 计算出签名信息，并使用 MetaMask 签署此信息，以证明此账户的所有权。
 
 ```ts
 const signMessage = await rss3.profile.accounts.getSigMessage(account);
 account.signature = await signer.signMessage(signMessage);
 ```
 
-3. Add account to rss3 file
+3. 将此账号添加到 RSS3 文件中
 
 ```ts
 await rss3.profile.accounts.post(account);
 ```
 
-4. Sync the modified file to RSS3 Network
+4. 将修改后的文件同步至 RSS3 网络
 
 ```ts
 await rss3.files.sync();
 ```
 
-Next let's add another account on a centralised platform, such as Twitter.
+下面添加一个来自中心化平台的账户，如 Twitter。
 
-1. Add our main address or a name pointing to our main address (see [API#Supported name service](/guide/api.html#supported-name-service)) to the Twitter bio, name or url
+1. 将主地址或指向主地址的域名（见[API#受支持的域名服务](../network/api.md#受支持的域名服务)）添加到 Twitter 的简介、名称或网址中
 
-2. Declare this account; 3. Add account to rss3 file; 4. Sync the modified file to RSS3 Network (Same as above)
+2. 声明这个账户
+3. 将账户添加到 RSS3 文件
+4. 将修改后的文件同步到 RSS3 网络（同上）
 
 ```ts
 const account = {
@@ -226,57 +228,57 @@ await rss3.profile.accounts.post(account);
 await rss3.files.sync();
 ```
 
-### Getting the List of Persona's Links
+### 获取对象链接列表
 
-RSS3 works with all social graph projects, however, if you want to leverage existing links on the RSS3 Network, here is how to make it work. 
+RSS3 可以和所有外部社交图谱一起工作，然而如果想直接使用 RSS3 网络上的现有链接，这里将展示该怎么做
 
-The protocol defines that each persona can have many types of link, we will take `following` as an example. Here we use `following` as the id. We can also define our own link id.
+该协议规定，每个对象可以有多种类型的链接，以 `following` 为例。这里将 `following` 作为 ID，也可以自定义链接 ID。
 
-Next let's try to get the persona's following list, that is, the list of link with the id `following`.
+接下来，尝试获取角色的关注列表，也就是 ID 为 `following` 的链接列表。
 
 ```ts
 const list = await rss3.links.getList('0xC8b960D09C0078c18Dcbe7eB9AB9d816BcCa8944', 'following');
 ```
 
-Now we have a array of addresses, but it's very difficult to get their profiles one by one to present a nice list with avatars and names, so the SDK provides a way to get profiles in bulk.
+现在有一个包含所有地址的数组，但要一个一个地获取他们的资料并渲染出一个带有头像和名字的漂亮列表十分麻烦，所以 SDK 提供了批量获取资料的方法。
 
 ```ts
 const profiles = await rss3.profile.getList(list);
 ```
 
-This gives us an array of profiles and addresses, which we can use to render a nice looking list.
+这返回了包含资料和地址的数组，可以用它来渲染一个漂亮的列表。
 
-The same applies to the list of followers, except that the links are replaced with backlinks.
+这同样适用于追随者列表，只是链接需要替换成反向链接。
 
 ```ts
 const list = await rss3.backlinks.getList('0xC8b960D09C0078c18Dcbe7eB9AB9d816BcCa8944', 'following');
 ```
 
-Note that there is a high probability that the list of followers will be large, in which case we will need to load it in segments to avoid performance issues.
+注意，追随者列表可能会非常大，在这种情况下，需要分段加载以避免性能问题。
 
 ```ts
 const page1 = await rss3.profile.getList(list.slice(0, 10));
 ```
 
-When the user scrolls to the next section
+获取下一部分列表
 
 ```ts
 const page2 = await rss3.profile.getList(list.slice(10, 20));
 ```
 
-### Getting Asset List
+### 获取资产列表
 
-Assets are divided into automatically indexed assets and self-declared assets (WIP), here is an example for auto assets.
+资产分为自动索引的资产和自我声明的资产（WIP），下面有个自动索引资产的示例。
 
-The list of supported auto assets is available at [API#Supported auto assets](/guide/api.html#supported-auto-assets)
+支持的自动资产列表见[API#受支持的自动索引资产](../network/api.md#受支持的自动索引资产)
 
-We can get a list of assets of a persona like this
+可以像这样获得给定对象的资产列表
 
 ```ts
 const assets = (await rss3.assets.auto.getList('0xC8b960D09C0078c18Dcbe7eB9AB9d816BcCa8944')).filter((asset) => !asset.includes('Mirror'));
 ```
 
-We will then find that we only get an array of asset ids without details, such as images or names. This is because details of some assets may a little longer for indexing. So a better practice is to render the list first, give them a loading state, then request the details and render the images and other information afterwards. 
+会发现只返回了包含资产 ID 的数组，而没有包含细节内容，如图片或名称。这是因为一些资产的细节可能需要长时间来进行索引。所以更好的做法是先渲染列表，给它们一个加载状态，然后获取细节，之后再渲染图片和其他信息。
 
 ```ts
 const details = await rss3.assets.getDetails({
@@ -285,9 +287,9 @@ const details = await rss3.assets.getDetails({
 });
 ```
 
-Please note that as fetching details from third party sources may be slow, the return value of details may not return all the details of assets requested, nor will it return it in order. So if there are any missing assets, retry to fetch the missing assets after some time.
+注意，由于从第三方来源获取细节内容可能会很慢，细节的返回值也可能不会返回所有请求的资产细节，也可能不会按顺序返回。因此，如果有任何遗漏的资产，请在一段时间后重新尝试获取遗漏的资产。
 
-We can write a loop to request details.
+可以写个循环来请求详细信息。
 
 ```ts
 let details = [];
@@ -306,11 +308,11 @@ for (let i = 0; i < 10; i++) {
 }
 ```
 
-### Getting Activity Feeds
+### 获取活动 Feed
 
-Items in the activity feed are divided into auto items indexed by the node and items submitted by the persona with signature. Therefore, items are stored in two types of files, and since auto indexed items may not be sorted chronologically, it is difficult for the client to accurately compute a chronological list. So the Node and SDK provide a more convenient way of getting items in chronological order.
+活动 feed 中的项目被分为由节点自动索引的项目和自行提交带有签名的项目。因此，项目被存储分别在两种类型的文件中，由于自动索引的项目不一定是按时间顺序排序的，而客户端很难准确计算出按时间顺序的列表。所以，节点和 SDK 提供了一种更方便的方式来获得按时间顺序排列的项目。
 
-If we want to get the last 10 activity items for a specific persona `0xC8b960D09C0078c18Dcbe7eB9AB9d816BcCa8944`:
+如果想获取特定对象 `0xC8b960D09C0078c18Dcbe7eB9AB9d816BcCa8944` 最新的十个活动项目：
 
 ```ts
 const page1 = await rss3.items.getList({
@@ -319,7 +321,7 @@ const page1 = await rss3.items.getList({
 });
 ```
 
-If we want to leverage existing links (e.g. following) in the RSS3 Networks for a list of items from other personas followed by `0xC8b960D09C0078c18Dcbe7eB9AB9d816BcCa8944`:
+如果想通过 RSS3 网络中现有的链接（如关注），获取其他对象 `0xC8b960D09C0078c18Dcbe7eB9AB9d816BcCa8944` 的项目列表：
 
 ```ts
 const page1 = await rss3.items.getList({
@@ -329,7 +331,7 @@ const page1 = await rss3.items.getList({
 });
 ```
 
-If you want to get comments on an asset
+如果想获取对某一资产的评论：
 
 ```ts
 const page1 = await rss3.items.getList({
@@ -339,7 +341,7 @@ const page1 = await rss3.items.getList({
 });
 ```
 
-If we use an external social graph (e.g. CyberConnect or Mem) and already have a list of following addresses:
+如果正在使用有关注地址列表的外部社交图谱（如 CyberConnect 或 Mem）：
 
 ```ts
 const page1 = await rss3.items.getList({
@@ -348,7 +350,7 @@ const page1 = await rss3.items.getList({
 });
 ```
 
-If we only want to get specific type(s) of activities, then:
+如果只想获取特定类型的活动：
 
 ```ts
 const page1 = await rss3.items.getList({
@@ -359,9 +361,9 @@ const page1 = await rss3.items.getList({
 });
 ```
 
-Possible values for field is available at [API#Supported auto items](/guide/api.html#supported-auto-items).
+[查看 API#受支持的自动索引项目](../network/api.md#受支持的自动索引项目)获取字段的可能值在
 
-Some of these items are changes to assets, such as getting an NFT, we may also need their details to render the image and name of the assets, which again uses the `rss3.assets.getDetails` method mentioned above.
+其中一些项目同时包括资产变更，比如得到 NFT，有时还需要使用它们细节来渲染资产的图像和名称，这时又需要使用上面提到的 `rss3.assets.getDetails` 方法。
 
 ```ts
 const assets = page1.filter((item) => item?.target?.field?.startsWith('assets-')).map((item) => item.target.field.replace(/^assets-/, ''));
@@ -383,14 +385,14 @@ for (let i = 0; i < 10; i++) {
 }
 ```
 
-Also, if we want to get the profile from the RSS3 Network, e.g. nickname and avatar, of a list of personas from the item list, we can:
+另外，如果想从 RSS3 网络中获取项目列表中对象的资料，例如昵称和头像，我们也可以：
 
 ```ts
 const profileSet = page1.filter((item) => item?.target?.field?.startsWith('assets-')).map((item) => utils.id.parse(item.id).persona);
 let profiles = await rss3.profile.getList(profileSet);
 ```
 
-When the user scrolls to the next section, we use the time of the last item on the page1 as a tsp parameter to get the next 10 items.
+当用户查看下一部分项目时，将 page1 的最后一个项目的时间作为 tsp 参数来获得后十个项目。
 
 ```ts
 const page2 = await rss3.items.getList({
@@ -402,9 +404,9 @@ const page2 = await rss3.items.getList({
 });
 ```
 
-### Posting Custom Items
+### 发表自定义项目
 
-Let's start with a plain text item
+让我们从一个纯文本项目开始
 
 ```ts
 await rss3.items.custom.post({
@@ -412,7 +414,7 @@ await rss3.items.custom.post({
 });
 ```
 
-Sometimes we also want to attach an image or a video to items, we need to upload the resource to an external storage to get an address, then put it in the content.
+有时我们也会想给项目添加个图片或视频，这时我们需要把资源上传到外部存储器，以获得一个链接，然后把它放在内容中。
 
 ```ts
 await rss3.items.custom.post({
@@ -427,7 +429,7 @@ await rss3.items.custom.post({
 });
 ```
 
-Sometimes we want to post an item that is related to another item, such as commenting on or liking an item.
+而有的时候还会想发布一个与另一项目有关的项目，如评论或喜欢它。
 
 ```ts
 // comment
@@ -448,7 +450,7 @@ const likeItem = await rss3.items.custom.post({
 });
 ```
 
-Or to an asset
+亦或是资产
 
 ```ts
 // comment
@@ -461,7 +463,7 @@ await rss3.items.custom.post({
 });
 ```
 
-Then if we want to modify the item, for example, by unliking it or modifying the summary, just tell the sdk the id of the item you want to modify and the content of the modified item.
+然后，如果想修改这个项目，例如，不喜欢它或修改摘要，只要告诉 sdk 想修改的项目的 id 和修改后的项目内容即可。
 
 ```ts
 await rss3.items.custom.patch({
@@ -470,7 +472,7 @@ await rss3.items.custom.patch({
 });
 ```
 
-Finally don't forget to sync your files.
+最后不要忘记同步你的文件。
 
 ```ts
 await rss3.files.sync();
@@ -478,13 +480,13 @@ await rss3.files.sync();
 
 ## SDK API
 
-View our full SDK API here
+查看完整的 SDK API
 
-### Files
+### 文件
 
 **files.sync()**
 
-Please note that changes will only be synced to the node after `files.sync()` has been successfully executed
+注意只有在 `files.sync()` 被成功执行后，更改才会同步到节点。
 
 <CodeGroup>
 <CodeGroupItem title="types" active>
@@ -524,11 +526,11 @@ const file = await rss3.files.get(rss3.account.address);
 </CodeGroupItem>
 </CodeGroup>
 
-### Account
+### 账号
 
 **account.mnemonic**
 
-If initialized with privateKey or a custom sign function, then this value is undefined
+如果用私钥或自定义签名函数进行初始化，那么这个值是未定义的。
 
 ```ts
 account.mnemonic: string | undefined
@@ -536,7 +538,7 @@ account.mnemonic: string | undefined
 
 **account.privateKey**
 
-If initialized with a custom sign function, then this value is undefined
+如果用自定义签名函数进行初始化，那么这个值是未定义的。
 
 ```ts
 account.privateKey: string | undefined
@@ -548,7 +550,7 @@ account.privateKey: string | undefined
 account.address: string
 ```
 
-### Profile
+### 资料
 
 **profile.get()**
 
@@ -710,7 +712,7 @@ const account = await rss3.profile.accounts.delete(
 </CodeGroupItem>
 </CodeGroup>
 
-### Items
+### 项目
 
 **items.getList()**
 
@@ -960,7 +962,7 @@ const backlinks = await rss3.items.custom.backlinks.getList('0x12345678901234567
 </CodeGroupItem>
 </CodeGroup>
 
-### Links
+### 链接
 
 **links.getListFile()**
 
@@ -1121,7 +1123,7 @@ const following = await rss3.links.delete('following', '0xd0B85A7bB6B602f63B0202
 </CodeGroupItem>
 </CodeGroup>
 
-### Backlinks
+### 反链
 
 **backlinks.getListFile()**
 
@@ -1163,7 +1165,7 @@ const followers = await rss3.backlinks.getList(rss3.account.address, 'following'
 </CodeGroupItem>
 </CodeGroup>
 
-### Assets
+### 资产
 
 **assets.getDetails()**
 
@@ -1315,16 +1317,16 @@ const otherAsset = await rss3.asset.custom.delete('custom-gk-q-10035911');
 </CodeGroupItem>
 </CodeGroup>
 
-## Development
+## 开发
 
 ```bash
 yarn
 yarn dev
 ```
 
-Open http://localhost:8080/demo/
+打开 <http://localhost:8080/demo/>
 
-Test
+测试
 
 ```bash
 yarn test
