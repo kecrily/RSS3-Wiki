@@ -2,21 +2,21 @@
 sidebarDepth: 4
 ---
 
-# RIP-4: Registered Indexed Items
+# RIP-4：可用索引项目
 
-## Abstract
+## 摘要
 
-RIP-4 is used to describe and qualify indexed assets and notes that can be used for RSS3 items.
+RIP-4 用于描述并限定适用于 RSS3 项目的资产和帖子。
 
-## Motivation
+## 动机
 
-The RSS3 protocol does not restrict what assets and notes can be indexed, which creates uncertainty in implementation and use.
+RSS3 协议未对适用索引的资产和帖子进行限制，这使得实现和使用时存在不确定性。
 
-## Dependencies
+## 依赖
 
 - [RIP-3: Registered Item Networks](./RIP-3.md): as `NetworkName`
 
-## TypeScript Validation
+## TypeScript 验证
 
 ```ts
 type Item = {
@@ -57,15 +57,15 @@ type Item = {
 };
 ```
 
-## Indexed Note Item List
+## 索引帖子项目列表
 
-### NFT Activities
+### NFT 活动
 
-NFT activity, including NFT minting, transferring out, transferring in, and burning.
+NFT 活动包括 NFT 铸造、转入、转出和销毁。
 
 #### `related_urls`
 
-URL of transaction page of Chain Explorer (defined by [RIP-3: Registered Item Networks](./RIP-3.md)) and NFT page (for example: OpenSea, Etherscan NFT Tracker) if avaiable.
+区块链浏览器交易页面（由 [RIP-3: Registered Item Networks](./RIP-3.md) 所规定）和可选的 NFT 页面（如 OpenSea 和 Etherscan NFT Tracker）的链接
 
 #### `tags`
 
@@ -132,11 +132,11 @@ URL of transaction page of Chain Explorer (defined by [RIP-3: Registered Item Ne
 }
 ```
 
-#### Examples
+#### 示例
 
-##### Minting of RSS3 Whitepaper #1800
+##### 铸造 RSS3 Whitepaper #1800
 
-[Chain Explorer](https://etherscan.io/tx/0x0b97d6caf6ade4cb0ec6f483463371b97d04fb1a74f72bcc411e480572d712af)
+[区块链浏览器](https://etherscan.io/tx/0x0b97d6caf6ade4cb0ec6f483463371b97d04fb1a74f72bcc411e480572d712af)
 
 [Etherscan NFT Tracker](https://opensea.io/assets/0xb9619cf4f875cdf0e3ce48b28a1c725bc4f6c0fb/1800)
 
@@ -256,15 +256,15 @@ URL of transaction page of Chain Explorer (defined by [RIP-3: Registered Item Ne
 }
 ```
 
-#### Special NFTs: POAP
+#### 特殊 NFT：POAP
 
-We think POAP is a good concept, but unfortunately it is not well implemented and still not out of the scope of NFT. We are looking forward to a kind of fungible but non transferable token standard to replace POAP in the future.
+POAP 是个很好的概念，可惜它没能得到很好的实现，仍然未脱离 NFT 的范畴。期待着未来能有一种可替换但不可转让的代币标准来取代 POAP。
 
-A set of [POAP](https://poap.xyz/) NFTs centrally issued, distributed and stored data by POAP Inc, which needs to be fetched from POAP Inc's centralized servers, but due to its widespread use, we have to support it specifically.
+POAP NFT 由 POAP 公司集中发布、分发和存储，数据需要从它们的中心化服务器中获取，但由于其得到广泛使用，我们不得不支持它。
 
 `related_urls`
 
-URL of transaction page of Gnosis Chain Explorer (`https://blockscout.com/xdai/mainnet/tx/<transaction_hash>`) and POAP page (`https://app.poap.xyz/r/token/<token_id>`).
+Gnosis 区块链浏览器交易页面（`https://blockscout.com/xdai/mainnet/tx/<transaction_hash>`）和 POAP 页面（`https://app.poap.xyz/r/token/<token_id>`）的链接。
 
 `tags`
 
@@ -275,16 +275,16 @@ URL of transaction page of Gnosis Chain Explorer (`https://blockscout.com/xdai/m
 ]
 ```
 
-Condition: `metadata.network` === `Gnosis Mainnet` && `metadata.collection_address` === `0x22C1f6050E56d2876009903609a2cC3fEf83B415`
+条件：`metadata.network` === `Gnosis Mainnet` && `metadata.collection_address` === `0x22C1f6050E56d2876009903609a2cC3fEf83B415`
 
-##### Minting of POAP #2444192
+##### 铸造 POAP #2444192
 
-[Chain Explorer](https://blockscout.com/xdai/mainnet/tx/0x51de22ba27f05aee163bf01983107b7ddb130d70e1cf9a0ea544392c80580020)
+[区块链浏览器](https://blockscout.com/xdai/mainnet/tx/0x51de22ba27f05aee163bf01983107b7ddb130d70e1cf9a0ea544392c80580020)
 
 [POAO Token Page](https://app.poap.xyz/r/token/2444192)
 
 <details>
-    <summary>POAP Info: https://api.poap.xyz/token/2444192</summary>
+    <summary>POAP 信息：https://api.poap.xyz/token/2444192</summary>
 
 ```json
 {
@@ -387,36 +387,36 @@ Condition: `metadata.network` === `Gnosis Mainnet` && `metadata.collection_addre
 }
 ```
 
-#### References
+#### 参见
 
 - [Specification | Metaplex Docs](https://docs.metaplex.com/token-metadata/specification)
 - [EIP-721: Non-Fungible Token Standard](https://eips.ethereum.org/EIPS/eip-721)
 
-### Mirror Entries
+### Mirror 作品
 
-Activity of a [Mirror](https://mirror.xyz/) Entry.
+[Mirror](https://mirror.xyz/) 作品相关活动。
 
-Mirror Entry is a kind of JSON file that uses the Ethereum account, but is stored in Arweave Mainnet by a Mirror official account.
+Mirror 作品通过 Mirror 官方账号存储在 Arweave 主网上，是 Ethereum 账号使用的一种 JSON 文件。
 
-It is worth noting that Mirror Entries can be modified by a new transaction.
+需要注意的是，Mirror 作品需要通过新的交易来进行内容修改。
 
 #### `related_urls`
 
-URL of transaction page of Arweave Chain Explorer (`https://viewblock.io/arweave/tx/<transaction_hash>`) and Mirror Entry page (`https://mirror.xyz/entry/<original_digest>`).
+Arweave 区块链浏览器交易页面（`https://viewblock.io/arweave/tx/<transaction_hash>`）和 Mirror 作品页面（`https://mirror.xyz/entry/<original_digest>`）的链接。
 
 #### `links.identifiers[0]`
 
-Mirror Entries can be modified by posting an Entry with the same digest attribute, here the Entry before and after the change is treated as two notes, and the latter note contains a `link.identifiers[0]` with `"type": "revision"`, pointing to the previous note.
+Mirror 作品通过发布具有相同摘要属性的条目进行修改，修改前后的条目被视为两个帖子，新的帖子通过携带 `"type": "revision"` 的 `link.identifier[0]` 链接指向旧的帖子。
 
 #### `title`
 
-Title of the Mirror Entry
+Mirror 作品的标题。
 
 #### `summary`
 
-Part or all of the Mirror Entry body.
+Mirror 作品的选文或全文。
 
-If the body is too long, then only record part of the body, followed by `...` at the end, the length is the maximum summary length set by the RSS3 Network.
+如果正文太长，则只记录正文的一部分，最后以`...`结尾，长度由 RSS3 网络设定的最大摘要长度所决定。
 
 #### `tags`
 
@@ -447,15 +447,15 @@ If the body is too long, then only record part of the body, followed by `...` at
 }
 ```
 
-#### Example
+#### 示例
 
-##### Entry vfTMz8HQa28GNEMfhZLbbAdYQoaY11khOUyXAzBjnX8
+##### 作品 vfTMz8HQa28GNEMfhZLbbAdYQoaY11khOUyXAzBjnX8
 
-[Mirror Address](https://mirror.xyz/0xee8fEeb6D0c2fC02Ef41879514A75d0E791b5061/vfTMz8HQa28GNEMfhZLbbAdYQoaY11khOUyXAzBjnX8)
+[Mirror 地址](https://mirror.xyz/0xee8fEeb6D0c2fC02Ef41879514A75d0E791b5061/vfTMz8HQa28GNEMfhZLbbAdYQoaY11khOUyXAzBjnX8)
 
-[Arware Transaction](https://viewblock.io/arweave/tx/9s_R8b4UfSMoP1wIJ7UGUC-fMtR68Z9cZQYplA6nj-k)
+[Arware 交易](https://viewblock.io/arweave/tx/9s_R8b4UfSMoP1wIJ7UGUC-fMtR68Z9cZQYplA6nj-k)
 
-[Arware Link](https://63chy34fd5emud6xaie62qmubhzs2r5pdh24mudctfaou6he.arweave.net/9s_R8b4UfSMoP1wIJ7UGUC-fMtR68Z9cZQYplA6nj-k)
+[Arware 链接](https://63chy34fd5emud6xaie62qmubhzs2r5pdh24mudctfaou6he.arweave.net/9s_R8b4UfSMoP1wIJ7UGUC-fMtR68Z9cZQYplA6nj-k)
 
 ```json
 {
@@ -500,13 +500,13 @@ If the body is too long, then only record part of the body, followed by `...` at
 }
 ```
 
-### Gitcoin Donations
+### Gitcoin 捐赠
 
-A special transfer activity for making a donation on Gitcoin.
+在Gitcoin 上进行捐赠的特殊交易活动。
 
 #### `related_urls`
 
-URL of transaction page of Chain Explorer and Gitcoin grant page (`https://gitcoin.co/grants/xxx/xxx`).
+区块链浏览器交易页面和 Gitcoin grant 页面的链接（`https://gitcoin.co/grants/xxx/xxx`）。
 
 #### `tags`
 
@@ -556,13 +556,13 @@ URL of transaction page of Chain Explorer and Gitcoin grant page (`https://gitco
 }
 ```
 
-#### Example
+#### 示例
 
-##### Donation 0xa262c71eb905ff5ab6da66134826c5f6d90af8db7b406f84ef4ac725d574749c
+##### 捐赠 0xa262c71eb905ff5ab6da66134826c5f6d90af8db7b406f84ef4ac725d574749c
 
-[Chain Explorer](https://etherscan.io/tx/0xa262c71eb905ff5ab6da66134826c5f6d90af8db7b406f84ef4ac725d574749c)
+[区块链浏览器](https://etherscan.io/tx/0xa262c71eb905ff5ab6da66134826c5f6d90af8db7b406f84ef4ac725d574749c)
 
-[Gitcoin address](https://gitcoin.co/grants/2679/rss3-rss-with-human-curation)
+[Gitcoin 地址](https://gitcoin.co/grants/2679/rss3-rss-with-human-curation)
 
 ```json
 {
@@ -618,15 +618,15 @@ URL of transaction page of Chain Explorer and Gitcoin grant page (`https://gitco
 }
 ```
 
-### Tweets
+### 推文
 
-[Tweets](https://help.twitter.com/en/using-twitter/types-of-tweets) on [Twitter](https://twitter.com/).
+[推特](https://twitter.com/)的[推文](https://help.twitter.com/en/using-twitter/types-of-tweets)。
 
-See the [Twitter API Documentation](https://developer.twitter.com/en/docs/twitter-api/v1/tweets/timelines/overview) to learn more about how to get tweets.
+[阅读 Twitter API 文档](https://developer.twitter.com/en/docs/twitter-api/v1/tweets/timelines/overview) 了解更多关于推文的信息。
 
 #### `related_urls`
 
-URL of Tweet page (`https://twitter.com/<twitter_id>/status/<tweet_id>`).
+推文页面链接（`https://twitter.com/<twitter_id>/status/<tweet_id>`）。
 
 #### `title`
 
@@ -634,7 +634,7 @@ Null
 
 #### `summary`
 
-Tweet text.
+推文内容。
 
 #### `tags`
 
@@ -683,11 +683,11 @@ Tweet text.
 }
 ```
 
-#### Example
+#### 示例
 
-##### Tweet 1483972580616949762
+##### 推文 1483972580616949762
 
-[Tweet address](https://twitter.com/DIYgod/status/1483972580616949762)
+[推文链接](https://twitter.com/DIYgod/status/1483972580616949762)
 
 <details>
     <summary>Twitter API</summary>
@@ -781,15 +781,15 @@ Tweet text.
 }
 ```
 
-### Misskey Notes
+### Misskey 帖子
 
-[Misskey](https://misskey-hub.net/) [Notes](https://misskey-hub.net/en/docs/features/note.html).
+[Misskey](https://misskey-hub.net/) [帖子](https://misskey-hub.net/en/docs/features/note.html).
 
-See the [Misskey API Documentation](https://misskey.io/api-doc#operation/users/notes) to learn more about how to get Misskey Notes.
+[阅读 Misskey API 文档](https://misskey.io/api-doc#operation/users/notes)了解更多关于帖子的信息。
 
 #### `related_urls`
 
-URL of Misskey Note page (`<misskey_host>/notes/<note_id>`).
+Misskey 帖子页面的链接（`<misskey_host>/notes/<note_id>`）。
 
 #### `title`
 
@@ -797,7 +797,7 @@ Null
 
 #### `summary`
 
-Note text.
+帖子内容。
 
 #### `tags`
 
@@ -856,11 +856,11 @@ Note text.
 }
 ```
 
-#### Example
+#### 示例
 
 ##### Misskey nya.one/notes/8wern2wyun
 
-[Misskey address](https://nya.one/notes/8wern2wyun)
+[Misskey 地址](https://nya.one/notes/8wern2wyun)
 
 <details>
     <summary>Misskey API</summary>
@@ -961,13 +961,13 @@ Note text.
 }
 ```
 
-### Jike Posts
+### 即刻动态
 
-[Jike](https://web.okjike.com/) Posts.
+[即刻](https://web.okjike.com/)动态。
 
 #### `related_urls`
 
-URL of Jike Post page (`https://web.okjike.com/originalPost/<posts_id>` or `https://web.okjike.com/repost/<posts_id>`).
+即刻动态页面的链接（`https://web.okjike.com/originalPost/<posts_id>` 或 `https://web.okjike.com/repost/<posts_id>`）。
 
 #### `title`
 
@@ -975,7 +975,7 @@ Null
 
 #### `summary`
 
-Post text.
+动态内容。
 
 #### `tags`
 
@@ -1024,11 +1024,11 @@ Post text.
 }
 ```
 
-#### Example
+#### 示例
 
-##### Jike 61dfc33558b7cf00109d11a4
+##### 即刻 61dfc33558b7cf00109d11a4
 
-[Jike address](https://web.okjike.com/repost/61dfc33558b7cf00109d11a4)
+[即刻地址](https://web.okjike.com/repost/61dfc33558b7cf00109d11a4)
 
 <details>
     <summary>Jike API</summary>
@@ -1114,21 +1114,21 @@ Post text.
 }
 ```
 
-## Indexed Asset Item List
+## 索引资产项目列表
 
 ### NFT
 
 #### `related_urls`
 
-URL of NFT page if avaiable.
+NFT 页面链接，可选。
 
 #### `title`
 
-NFT name.
+NFT 名称。
 
 #### `summary`
 
-NFT description.
+NFT 描述。
 
 #### `tags`
 
@@ -1183,11 +1183,11 @@ NFT description.
 }
 ```
 
-#### Examples
+#### 示例
 
-##### Minting of RSS3 Whitepaper #1800
+##### 铸造 RSS3 Whitepaper #1800
 
-[Chain Explorer](https://etherscan.io/nft/0xb9619cf4f875cdf0e3ce48b28a1c725bc4f6c0fb/1800)
+[区块链浏览器](https://etherscan.io/nft/0xb9619cf4f875cdf0e3ce48b28a1c725bc4f6c0fb/1800)
 
 ```json
 {
@@ -1251,14 +1251,14 @@ NFT description.
 }
 ```
 
-#### Special NFTs: POAP
+#### 特殊的 NFT：POAP
 
-See [NFT Activities - Special NFTs: POAP](#special-nfts-poap)
+参见 [NFT Activities - Special NFTs: POAP](#special-nfts-poap)
 
-### GitHub Achievement
+### GitHub 成就
 
 TODO
 
-### PlayStation Network Trophy
+### PlayStation 网络奖杯
 
 TODO

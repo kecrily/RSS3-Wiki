@@ -1,28 +1,28 @@
-# RIP-1: Registered Account Platforms
+# RIP-1：可用账户平台
 
-## Abstract
+## 摘要
 
-RIP-1 is used to describe and qualify the accounts that can be used for RSS3.
+RIP-1 用于描述并限定 RSS3 中适用的账号（account）。
 
-## Motivation
+## 动机
 
-The RSS3 protocol does not restrict what platform accounts can be used, which creates uncertainty in implementation and use.
+RSS3 协议未对适用的平台账号进行限制，这使得实现和使用时存在不确定性。
 
-## Cryptography-based Decentralized Platforms
+## 基于密码学的去中心化平台
 
-Cryptography-based decentralized platforms do not require a centralized server, but use a public signature algorithm for authentication.
+基于密码学的去中心化平台不需要使用中心化服务器，它们通过公开的签名算法进行身份认证。
 
-The accounts of these platforms can be used for both Main Accounts and Connected Accounts.
+这些平台的账户可以用作主账户和关联账户。
 
-## Centralized Platforms
+## 中心化平台
 
-Centralized platforms require centralized servers for authentication. The user must put the address or name (Refer to [RIP-2: Registered Name Services](./RIPs/RIP-2.md)) of the Main Accounts into some location in the platform's account configuration to verify ownership.
+中心化平台需要通过中心化服务器进行验证。用户必须将主账户的地址或名称（参考 [RIP-2：注册名称服务](./RIP-2.md)）放到平台账户资料的某个位置，以验证所有权。
 
-The accounts of these platforms can only be used for Connected Accounts.
+这些平台的账号指南作为关联账号。
 
-## Account Platform List
+## 支持的平台列表
 
-| Platform ID | Platform Name | Platform Symbol | Platform Website | Cryptography-based | Example | Generation and Verification |
+| ID | 名称 | 标志 | 网站 | 基于密码学 | 示例 | 生成和验证 |
 | -- | -- | -- | -- | -- | -- | -- |
 | 1 | Ethereum | ethereum | <https://ethereum.org> | Yes | 0xC8b960D09C0078c18Dcbe7eB9AB9d816BcCa8944@ethereum | <https://ethereum.org/en/developers/docs/accounts/> |
 | 2 | Solana | solana | <https://solana.com> | Yes | 42jYG1DjDeGq8VgKtah1yR45MXU1uxThFxXukb6QBKMY@solana | <https://docs.solana.com/terminology#account> |

@@ -1,25 +1,25 @@
-# RIP-5: Registered Link Types
+# RIP-5：可用链接类型
 
-## Abstract
+## 摘要
 
-RIP-5 is used to describe and qualify the link types that can be used for RSS3 link.
+RIP-5 用于描述并限定适用于 RSS3 链接的链接类型。
 
-## Motivation
+## 动机
 
-The RSS3 protocol does not restrict what link types can be used for links, which creates uncertainty in implementation and use.
+RSS3 协议未对适用链接的链接类型进行限制，这使得实现和使用时存在不确定性。
 
-## For Account Instances
+## 账号实例
 
-| Link Type | Description |
+| 链接类型 | 描述 |
 | -- | -- |
-| following | It represents subscribing to target's notes as a follower. These notes should appear in the follower's timeline by `rss3://<Instance>/list/note?link_type=following` |
-| like | It represents the like for the target. In many applications, the number of received likes is displayed next to the items by the value of `total` returned by `rss3://<Instance>/list/backlink?type=following&limit=0` |
-| collection | It represents bookmarking the target. In some applications, user bookmarks are displayed by `rss3://<Instance>/list/link/collection` |
+| 关注 | 它表示作为跟随者订阅目标对象的帖子。这些帖子将通过 `rss3://<Instance>/list/note?link_type=following` 出现在跟随者的时间线中 |
+| 喜欢 | 它表示对目标对象的喜欢。在许多应用中，通过 `rss3://<Instance>/list/backlink?type=following&limit=0` 返回的 `total` 值在项目旁边显示得到喜欢数 |
+| 收藏 | 它表示标记目标对象。在一些应用中，用户的收藏通过 `rss3://<Instance>/list/link/collection` 展示 |
 
-## For Notes
+## 帖子
 
-| Link Type | Description |
+| 链接类型 | 描述 |
 | -- | -- |
-| comment | It represents this note is a comment on the target. This note is mainly shown at the target's side and may not be displayed in own timeline. In many applications, the number and list of received comments is displayed next to the items by `rss3://<Instance>/list/backlink?type=comment` |
-| forwarding | It represents this note is a repost of the target. This note is mainly displayed in own timeline and may not appear in the target's side. |
-| revision | It represents this note is a modified version of the target note. |
+| 评论 | 它表示这个帖子是对目标对象的评论。这个帖子主要显示在目标对象一侧，而不显示在自己的时间线中。在许多应用中，评论数量和列表通过 `rss3://<Instance>/list/backlink?type=comment` 显示在项目旁 |
+| 转发 | 它表示这个帖子是对目标对象的转发。这个帖子主要显示在自己的时间线中，而不好显示在目标对象一侧 |
+| 修改 | 它表示这个帖子对目标对象进行的修改 |

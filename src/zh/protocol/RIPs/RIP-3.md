@@ -1,16 +1,16 @@
-# RIP-3: Registered Item Networks
+# RIP-3: 可用项目 (item) 网络
 
-## Abstract
+## 摘要
 
-RIP-3 is used to describe and qualify the networks that can be used for RSS3 indexed items.
+RIP-3 用于描述并限定适用于 RSS3 索引项目的网络。
 
-## Motivation
+## 动机
 
-The RSS3 protocol does not restrict what networks can be used for indexed items, which creates uncertainty in implementation and use.
+RSS3 协议未对适用的项目网络进行限制，这使得实现和使用时存在不确定性。
 
-## Network List
+## 网络列表
 
-| Network ID | Network Name | Network Symbol | Network Website | Chain Explorer |
+| ID | 名称 | 标志 | 网站 | 区块链浏览器 |
 | -- | -- | -- | -- | -- |
 | 0 | RSS3 | rss3 | <https://rss3.io/> | To be completed |
 | 1 | Ethereum | ethereum | <https://ethereum.org/> | <https://etherscan.io/> |

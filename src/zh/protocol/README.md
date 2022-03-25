@@ -1,28 +1,28 @@
-# Introduction
+# 介绍
 
-Project Link: <https://github.com/NaturalSelectionLabs/RSS3>
+项目链接：<https://github.com/NaturalSelectionLabs/RSS3>
 
-## Roadmap
+## 路线图
 
-Currently, we are preparing our self-published [Internet-Drafts](https://www.ietf.org/how/ids/). In the future, we will pursue it to be published as an [RFC](https://www.ietf.org/standards/rfcs/) and become an Internet standard.
+目前，我们正在筹备我们自行出版的 [Internet-Drafts](https://www.ietf.org/how/ids/)（互联网草案）。在未来，我们将争取把它作为 [RFC](https://www.ietf.org/standards/rfcs/) 出版，并成为互联网标准。
 
-In the meantime, we will continue to promote its implementation and use in the Web3 area.
+同时，我们将继续推动其在 Web3 领域的实施和使用。
 
-## Project Status
+## 项目状态
 
-🔭 The upcoming RSS3 Protocol v0.4.0 [![RSS3](https://badge.rss3.workers.dev/?version=v0.4.0--rc.1)](./v0.4.0-rc.1.md) is requesting for comments.
+🔭 即将到来的 RSS3 协议 v0.4.0 [![RSS3](https://badge.rss3.workers.dev/?version=v0.4.0--rc.1)](./v0.4.0-rc.1.md) 正在征求意见
 
-- [View Documents](./v0.4.0-rc.1.html)
+- [阅读文档](./v0.4.0-rc.1.html)
 
-- Participate in the [discussion](https://github.com/NaturalSelectionLabs/RSS3-Protocol/discussions/32)
+- [参与讨论](https://github.com/NaturalSelectionLabs/RSS3-Protocol/discussions/32)
 
-🔬 Current stable version: RSS3 Protocol v0.3.1 [![RSS3](https://badge.rss3.workers.dev/?version=v0.3.1)](./v0.3.1.md)
+🔬 当前稳定版本：RSS3 协议 v0.3.1 [![RSS3](https://badge.rss3.workers.dev/?version=v0.3.1)](./v0.3.1.md)
 
-- [View Documents](./v0.3.1.md)
+- [阅读文档](./v0.3.1.md)
 
-## Historical drafts
+## 历史草稿
 
-[Changelog](https://github.com/NaturalSelectionLabs/RSS3/blob/main/CHANGELOG.md)
+[更新日志](https://github.com/NaturalSelectionLabs/RSS3/blob/main/CHANGELOG.md)
 
 - [![RSS3](https://badge.rss3.workers.dev/?version=v0.3.0)](./v0.3.0.md)
 - [![RSS3](https://badge.rss3.workers.dev/?version=v0.2.0)](./v0.3.0.md)
@@ -30,10 +30,10 @@ In the meantime, we will continue to promote its implementation and use in the W
 - [![RSS3](https://badge.rss3.workers.dev/?version=v0.1.0)](./v0.3.0.md)
 - [![RSS3](https://badge.rss3.workers.dev/?version=v0.1.0--alpha.0)](./v0.3.0.md)
 
-## Contributing
+## 贡献
 
-RSS3 is a community-based project, built with an open ecosystem and creative developers, and we thank every one for the participation.
+RSS3 项目基于社区，由开放的生态系统和有创造力的开发者所建立，我们感谢每一个人的参与。
 
-- Report irrationality or request feature in [issues](https://github.com/NaturalSelectionLabs/RSS3/issues)
-- Discussion in [discussions](https://github.com/NaturalSelectionLabs/RSS3/discussions)
-- Submit your [pull request](https://github.com/NaturalSelectionLabs/RSS3/pulls)
+- 在 issues [报告问题或请求功能](https://github.com/NaturalSelectionLabs/RSS3/issues)
+- 在 discussions [参与讨论](https://github.com/NaturalSelectionLabs/RSS3/discussions)
+- [提交你的 pull request](https://github.com/NaturalSelectionLabs/RSS3/pulls)
