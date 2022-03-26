@@ -28,7 +28,7 @@ export const zh: SidebarConfig = {
             link: '/zh/protocol/README.md',
             children: [
                 '/zh/protocol/README.md',
-                '/zh/protocol/v0.4.0-rc.1.md',
+                '/zh/protocol/v0.4.0-rc.2.md',
                 {
                     text: 'RSS3 Improvement Proposals',
                     children: [

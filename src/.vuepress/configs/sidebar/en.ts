@@ -22,13 +22,13 @@ export const en: SidebarConfig = {
             ],
         },
         {
-            text: '🕊 Protocol',
+            text: '🕊 Protocols',
             collapsible: true,
             sidebarDepth: 5,
             link: '/protocol/README.md',
             children: [
                 '/protocol/README.md',
-                '/protocol/v0.4.0-rc.1.md',
+                '/protocol/v0.4.0-rc.2.md',
                 {
                     text: 'RSS3 Improvement Proposals',
                     children: [
@@ -42,7 +42,7 @@ export const en: SidebarConfig = {
             ],
         },
         {
-            text: '🐿 SDK',
+            text: '🐿 SDKs',
             collapsible: true,
             link: '/sdk/list.md',
             children: [
