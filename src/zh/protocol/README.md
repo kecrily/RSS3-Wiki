@@ -10,11 +10,9 @@
 
 ## 项目状态
 
-🔭 即将到来的 RSS3 协议 v0.4.0 [![RSS3](https://badge.rss3.workers.dev/?version=v0.4.0--rc.1)](./v0.4.0-rc.1.md) 正在征求意见
+🔭 即将到来的 RSS3 协议 v0.4.0 [![RSS3](https://badge.rss3.workers.dev/?version=v0.4.0--rc.2)](./v0.4.0-rc.2.md) 正在征求意见
 
-- [阅读文档](./v0.4.0-rc.1.html)
-
-- [参与讨论](https://github.com/NaturalSelectionLabs/RSS3-Protocol/discussions/32)
+- [阅读文档](./v0.4.0-rc.2.html)
 
 🔬 当前稳定版本：RSS3 协议 v0.3.1 [![RSS3](https://badge.rss3.workers.dev/?version=v0.3.1)](./v0.3.1.md)
 
